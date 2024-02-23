@@ -10,6 +10,7 @@ import google.generativeai as genai
 
 st.set_page_config(page_title="Geminipro", page_icon="🔮")
 gemini_api_key = st.sidebar.text_input('Enter Gemini API Key', type='password')
+st.sidebar.markdown("Create your Gemini API Key [here](https://aistudio.google.com/app/apikey)")
 genai.configure(api_key=gemini_api_key)
 
 # Function to load OpenAI model and get respones
