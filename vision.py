@@ -9,6 +9,7 @@ from PIL import Image
 import google.generativeai as genai
 
 st.set_page_config(page_title="Geminipro", page_icon="🔮")
+# st.sidebar("Create your Gemini Pro Vision API Key here: https://aistudio.google.com/app/apikey")
 gemini_api_key = st.sidebar.text_input('Enter Gemini API Key', type='password')
 st.sidebar.markdown("Create your Gemini API Key [here](https://aistudio.google.com/app/apikey)")
 genai.configure(api_key=gemini_api_key)
